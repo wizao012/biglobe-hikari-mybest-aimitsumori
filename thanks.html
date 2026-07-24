@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { background: #bfe3fa; }
+  body { font-family: "Noto Sans JP", sans-serif; -webkit-font-smoothing: antialiased; background-color: #bfe3fa; }
+  a { color: #0b6fe0; text-decoration: none; }
+  a:hover { color: #0954ad; }
+  .lp-body { position: relative; z-index: 1; }
+  @media (min-width: 431px) { .lp-body { box-shadow: 0 0 60px rgba(20,70,140,0.22); } }
+  @media (max-width: 430px) { html, body { background: #ffffff; } #raybg { display: none; } }
+</style>
+<script>
+(function(){
+  var el=null, ticking=false, cur=0, target=0;
+  function loop(){
+    el = el || document.getElementById('raybg');
+    target = (window.scrollY||window.pageYOffset||0) * 0.006;
+    cur += (target - cur) * 0.08;
+    if(el){ el.style.transform = 'rotate('+cur.toFixed(3)+'deg)'; }
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
+</script>
+</helmet>
+<div id="raybg" aria-hidden="true" style="position: fixed; top: -50vh; left: -50vw; width: 200vw; height: 200vh; z-index: 0; pointer-events: none; transform-origin: center center; will-change: transform; background: radial-gradient(ellipse 55% 48% at 50% 68%, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.12) 45%, rgba(255,255,255,0) 66%), repeating-conic-gradient(from 174deg at 50% 70%, #cbe8fb 0deg 6deg, #b1dbf6 6deg 12deg);"></div>
+<div class="lp-body" style="max-width: 430px; margin: 0 auto; min-height: 100vh; background: #ffffff; display: flex; flex-direction: column;">
+
+  <div style="display: flex; align-items: center; justify-content: center; padding: 14px 16px; border-bottom: 1px solid #e8e8e8;">
+    <img src="assets/logo.png" alt="BIGLOBE光" style="height: 32px; width: auto; display: block;">
+  </div>
+
+  <div style="flex: 1; padding: 48px 24px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+    <div style="width: 96px; height: 96px; border-radius: 50%; background: #e4f0fc; display: flex; align-items: center; justify-content: center; margin-bottom: 28px;">
+      <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#0b3ea8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
+    </div>
+    <h1 style="font-size: 26px; font-weight: 900; color: #0b3ea8; line-height: 1.4; margin-bottom: 18px;">お申し込み<br>ありがとうございます</h1>
+    <p style="font-size: 15px; line-height: 1.9; color: #444; margin-bottom: 32px;">お申し込みを受け付けました。<br>担当者より、入力いただいた番号宛にお電話にて<br>ご連絡いたしますので、少々お待ちください。</p>
+
+    <div style="width: 100%; background: #f2f7fd; border-radius: 12px; padding: 20px; text-align: left; margin-bottom: 36px;">
+      <div style="font-size: 14px; font-weight: 700; color: #0b3ea8; margin-bottom: 10px;">今後の流れ</div>
+      <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; line-height: 1.7; color: #555;">
+        <div>1. 担当者よりご連絡</div>
+        <div>2. 工事日の調整</div>
+        <div>3. 開通工事・ご利用開始</div>
+      </div>
+    </div>
+
+    <a href="index.html" style="display: inline-flex; align-items: center; gap: 8px; color: #0b3ea8; font-size: 15px; font-weight: 700;">
+      <span style="font-size: 18px; line-height: 1;">‹</span> トップページに戻る
+    </a>
+  </div>
+
+  <footer style="background: #0b3ea8; color: #ffffff; padding: 24px 16px; text-align: center;">
+    <div style="font-size: 11px; opacity: 0.85; line-height: 1.6; white-space: nowrap; font-size: 9px;">Copyright © 2026 BIGLOBE光 キャンペーンお申し込みサイト All rights reserved。</div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>
