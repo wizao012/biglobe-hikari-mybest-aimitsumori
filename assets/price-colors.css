@@ -1,0 +1,32 @@
+/* Price-only color trial. Original raster files, amounts and layout are untouched. */
+#price .c-price__tabs,
+#price .c-price__monthly-content,
+#price .c-price__monthly-content--end { background: #fff; }
+#price .c-price__monthly-title { background: #164fb1; color: #fff; }
+#price .c-price__tab--10g { background: #e6efff; }
+#price .c-price__tab--1g { background: #f3f7ff; }
+#price .c-price__tabs { border: 1px solid #d9e5f6; }
+#price .c-price__monthly-content,
+#price .c-price__monthly-content--end { border-left: 1px solid #d9e5f6; border-right: 1px solid #d9e5f6; }
+.b-price-color-overlay { position: relative; container-type: inline-size; }
+.b-price-color-overlay picture, .b-price-color-overlay img { display: block; width: 100%; height: auto; }
+.b-price-heading { position: absolute; display: flex; justify-content: center; align-items: center; text-align: center; font-weight: 700; line-height: 1.4; color: #fff; background: #164fb1; font-size: 3.32cqw; }
+.b-price-color-overlay--monthly .b-price-heading { top: 5.42%; height: 18.07%; width: 42.3%; }
+.b-price-heading--10g { left: 2.72%; }
+.b-price-heading--1g { left: 54.98%; background: #e3efff; color: #1a3347; }
+.b-price-color-overlay--initial .b-price-heading { left: 2.72%; width: 42.3%; height: 7.9%; font-size: 3.6cqw; }
+.b-price-heading--new { top: 2.37%; }
+.b-price-heading--transfer { top: 33.95%; }
+.b-price-heading--change { top: 65.53%; }
+.b-price-color-overlay--initial .b-price-heading--all { left: 54.98%; top: 2.37%; height: 17.24%; background: #e3efff; color: #1a3347; display: block; padding-top: 2.1%; box-sizing: border-box; }
+.b-price-heading small { font-size: .8em; }
+@media(min-width:768px) {
+ .b-price-color-overlay--monthly .b-price-heading { top: 0; height: 20.806%; width: 43.625%; font-size: 3.25cqw; }
+ .b-price-heading--10g { left: 1.125%; }
+ .b-price-heading--1g { left: 55.25%; }
+ .b-price-color-overlay--initial .b-price-heading { left: 1.125%; width: 43.625%; height: 8.378%; font-size: 3.75cqw; }
+ .b-price-heading--new { top: 1.064%; }
+ .b-price-heading--transfer { top: 33.112%; }
+ .b-price-heading--change { top: 65.16%; }
+ .b-price-color-overlay--initial .b-price-heading--all { left: 55.25%; top: 1.064%; height: 21.277%; padding-top: 2.3%; }
+}
