@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 138"><defs><style>.cls-1, .cls-2 {
+        fill: #008cff;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke-width: 6px;
+      }
+
+      .cls-3, .cls-2 {
+        stroke: #008cff;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-5 {
+        fill: #f0f8fe;
+      }</style></defs><g id="_背景" data-name="背景"><circle id="_楕円形_591" data-name="楕円形 591" class="cls-5" cx="69" cy="69" r="69"/></g><g id="_レイヤー_1" data-name="レイヤー 1"><path id="_楕円形_592" data-name="楕円形 592" class="cls-3" d="M54.38,50.53c23.53-20.89,48.67-31,56.16-22.57s-5.52,32.2-29.05,53.1-48.67,31-56.16,22.57,5.52-32.21,29.05-53.1Z"/><rect id="_長方形_1" data-name="長方形 1" class="cls-1" x="29.25" y="34" width="76.5" height="63.25" rx="4" ry="4"/><rect id="_長方形_1-2" data-name="長方形 1-2" class="cls-4" x="34.25" y="40" width="66.75" height="43" rx="2" ry="2"/><path id="_長方形_3" data-name="長方形 3" class="cls-2" d="M64.75,94.5h6.5c.55,0,1,.45,1,1v11.5c0,.55-.45,1-1,1h-6.5c-.55,0-1-.45-1-1v-11.5c0-.55.45-1,1-1Z"/><path id="_長方形_3-2" data-name="長方形 3-2" class="cls-2" d="M50.75,106.5h34c.55,0,1,.45,1,1v1.5c0,.55-.45,1-1,1h-34c-.55,0-1-.45-1-1v-1.5c0-.55.45-1,1-1Z"/><path id="_楕円形_592-2" data-name="楕円形 592" class="cls-3" d="M103.66,55.88c-5.4,8.03-13.05,16.74-22.36,25.01-4.49,3.99-9.04,7.59-13.52,10.73"/></g></svg>

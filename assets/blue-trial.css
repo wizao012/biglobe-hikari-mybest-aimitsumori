@@ -1,0 +1,11 @@
+/* Reversible B color experiment. Snapshot: work/checkpoints/b-before-blue-trial */
+#mv .c-mv__notes { background: #164fb1; color: #fff; }
+#mv .c-mv__notes a { color: #ffe34f; }
+.c-benefits__content-title, .c-benefits__detail-title,
+.c-button--10g { background: #164fb1; color: #ffe34f; }
+.c-tab-panel.type--line-speed .c-tab-panel__button:nth-child(1).is-active { background: #164fb1; color: #ffe34f; }
+.c-tab-panel.type--line-speed .c-tab-panel__pane:nth-child(1).is-active { border-color: #164fb1; }
+.c-details__box--10g .c-details__accordion-list,
+.c-details__box--10g .c-accordion__trigger,
+.c-details__box--10g .c-accordion__content-inner { border-color: #164fb1 !important; }
+/* Keep the restored price-difference picture and its original box styling. */
